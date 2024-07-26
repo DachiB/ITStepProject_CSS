@@ -1,0 +1,598 @@
+@import url("https://fonts.cdnfonts.com/css/cyberpunk-is-not-dead");
+@import url("https://fonts.cdnfonts.com/css/monzane");
+
+/* font-family: 'Monzane', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Cyberpunk Is Not Dead", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  /* background: rgb(245, 254, 0);
+  background: linear-gradient(164deg, #faff5c 0%, rgba(110, 231, 255, 1) 100%); */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+nav > p {
+  font-family: "Cyberpunk Is Not Dead", sans-serif;
+  font-size: 36px;
+  color: white;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  padding-bottom: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.mainbehind {
+  filter: blur(7px) brightness(1);
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 35px;
+}
+
+.main > p {
+  background-color: white;
+  box-shadow: 0px 0px 10px gray;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.card > img {
+  width: 300px;
+  background: rgb(245, 254, 0);
+  background: linear-gradient(
+    164deg,
+    rgba(245, 254, 0, 1) 0%,
+    rgba(110, 231, 255, 1) 100%
+  );
+  padding: 5px;
+  box-shadow: 0px 0px 20px black;
+  transition: 0.3s;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  transition: 0.3s;
+}
+
+.cart > i {
+  border: none;
+}
+
+.namecart {
+  font-family: "Monzane", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -5px);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(150, 150, 150) 0%,
+    rgba(255, 255, 255, 0.034) 100%
+  );
+  width: 97%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 2px 30px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 50px;
+}
+
+.cardvert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gun1 {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.gun1 > img {
+  width: 450px;
+  background: rgb(245, 254, 0);
+  background: linear-gradient(
+    164deg,
+    rgba(245, 254, 0, 1) 0%,
+    rgba(110, 231, 255, 1) 100%
+  );
+  padding: 5px;
+  box-shadow: 0px 0px 20px black;
+  transition: 0.3s;
+}
+
+.gun1 > p {
+  font-family: "Monzane", sans-serif;
+  font-size: 24px;
+  position: relative;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -44px);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(150, 150, 150) 0%,
+    rgba(255, 255, 255, 0.034) 100%
+  );
+  width: 98%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+.cardvert2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.cardvert2 > p {
+  font-family: "Monzane", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -4px);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(150, 150, 150) 0%,
+    rgba(255, 255, 255, 0.034) 100%
+  );
+  width: 97%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+.cardvert2 > img {
+  width: 300px;
+  background: rgb(245, 254, 0);
+  background: linear-gradient(164deg, #f5fe00 0%, rgba(110, 231, 255, 1) 100%);
+  padding: 5px;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px black;
+  transition: 0.3s;
+}
+
+.gun1:hover {
+  transform: scale(1.1);
+}
+
+.cardvert2:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.behind {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  filter: blur(7px) brightness(0.9);
+}
+
+.cardvert > p {
+  font-family: "Monzane", sans-serif;
+  font-size: 24px;
+  position: relative;
+  bottom: 41px;
+  left: 50%;
+  transform: translate(-50%, -4px);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(150, 150, 150) 0%,
+    rgba(255, 255, 255, 0.034) 100%
+  );
+  width: 98%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+.navleft {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+}
+
+.navleft > li > button {
+  font-size: 17px;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  filter: drop-shadow(0px 0px 1.5px black);
+}
+
+.navright {
+  filter: drop-shadow(0px 0px 1px rgb(71, 71, 71));
+  color: white;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+section {
+  position: relative;
+  transform: translate(0, -10px);
+  width: 100%;
+  background: linear-gradient(164deg, rgba(110, 231, 255, 1) 0%, #faff5c 100%);
+}
+
+.streetweartext {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+.streetwearvid {
+  width: 30%;
+  height: 800px;
+  object-fit: cover;
+  /* background: rgb(245, 254, 0);
+  background: linear-gradient(
+    164deg,
+    rgba(245, 254, 0, 1) 0%,
+    rgba(110, 231, 255, 1) 100%
+  ); */
+}
+
+.streetwearcontent {
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.img1 {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.img2 {
+  width: 100%;
+  height: 42.5%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.streetwearcolumn1 {
+  width: 25%;
+  height: 800px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.streetwearvid2 {
+  width: 20%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.car1 {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  /* border-radius: 5px; */
+}
+
+.car1 > img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  object-position: center;
+}
+
+.carscontent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding:15px;
+}
+
+.desc {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 50px 50px;
+  width: 100%;
+  background: rgb(83, 83, 83);
+  background: linear-gradient(
+    307deg,
+    rgba(83, 83, 83, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  gap: 30px;
+  transition: 0.3s;
+}
+
+.desc > h1 {
+  font-family: "Monzane", sans-serif;
+  font-size: 42px;
+}
+
+.desc > p {
+  color: rgba(255, 255, 255, 0.774);
+  font-family: "Monzane", sans-serif;
+  font-size: 20px;
+}
+
+.desc > button {
+  background: rgba(255, 255, 255, 0.041);
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.fa-cart-shopping {
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 7px;
+  padding-right: 1px;
+  border-radius: 10px;
+}
+
+.streetwearvid:hover , .streetwearvid2:hover , .img1:hover , .img2:hover{
+  transform: scale(1.03);
+}
+
+
+.sliders {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.slider-wrapper {
+	position: relative;
+	margin: 0 auto;
+  width: 50%;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
+  border-radius: 20px;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.description {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 10px;
+  width: 100%;
+  padding: 0 20px;
+  color: white;
+  font-size: 32px;
+  text-shadow: 0px 0px 5px black;
+}
+
+footer {
+  position: relative;
+  top: -10px;
+  background-color: black;
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+}
+
+.iconss {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iconsss {
+  display: flex;
+  justify-content: space-around;
+  font-size: 36px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  height: 30px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.151);
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: white;
+  width: 100%;
+}
+
+.subscribe > button {
+  height: 25px;
+  width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+ .navleft, .navright {
+  display: none;
+ }
+
+ .car1 {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /* .card , .cardvert2 {
+  display: none;
+ }
+
+ .cardvert {
+  flex-wrap: wrap;
+ } */
+
+}
+
+@media screen and (max-width: 900px) {
+  nav > p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav > p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 1720px) {
+.car1 {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ } }
+
+.desc > button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
